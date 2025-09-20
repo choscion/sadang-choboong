@@ -15,7 +15,14 @@ export interface TextProps extends HTMLAttributes<HTMLDivElement> {
     inline?: boolean
 }
 
-export function Text({children, color = 'adaptiveGrey900', size = 't3', bold = false, inline = false, ...props}: TextProps = {}) {
+export function Text({
+    children,
+    color = 'adaptiveGrey900',
+    size = 't3',
+    bold = false,
+    inline = false,
+    ...props
+}: TextProps = {}) {
     if (typeof children !== 'string') {
         // ?
         return (
@@ -26,7 +33,7 @@ export function Text({children, color = 'adaptiveGrey900', size = 't3', bold = f
                     bold,
                 })}
                 style={{
-                  display: inline === true ? "inline" : "block"
+                    display: inline === true ? 'inline' : 'block',
                 }}
                 {...props}
             >
