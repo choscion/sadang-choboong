@@ -6,7 +6,8 @@ import type {HTMLAttributes} from 'react'
 
 const cx = classNames.bind(styles)
 
-export interface TextProps extends HTMLAttributes<HTMLDivElement> { // extends이하 - div의 속성을 가져올 수 있음 (....props)
+export interface TextProps extends HTMLAttributes<HTMLDivElement> {
+    // extends이하 - div의 속성을 가져올 수 있음 (....props)
     children?: React.ReactNode
     color?: Color
     size?: 't1' | 't2' | 't3' | 't4' | 't5' | 't6' | 't7'
@@ -14,7 +15,8 @@ export interface TextProps extends HTMLAttributes<HTMLDivElement> { // extends�
 }
 
 export function Text({children, color = 'adaptiveGrey900', size = 't3', bold = false, ...props}: TextProps = {}) {
-    if (typeof children !== 'string') { // ?
+    if (typeof children !== 'string') {
+        // ?
         return (
             <div
                 className={cx({
