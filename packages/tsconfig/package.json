@@ -6,6 +6,6 @@
         "deploy": "pnpm publish"
     },
     "publishConfig": {
-      "access": "public"
+        "access": "public"
     }
 }

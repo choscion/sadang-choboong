@@ -50,6 +50,6 @@
         "eslint": ">=9"
     },
     "publishConfig": {
-      "access": "public"
+        "access": "public"
     }
 }

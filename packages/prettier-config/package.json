@@ -20,6 +20,6 @@
     "keywords": [],
     "license": "MIT",
     "publishConfig": {
-      "access": "public"
+        "access": "public"
     }
 }
