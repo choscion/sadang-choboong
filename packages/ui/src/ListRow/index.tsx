@@ -1,9 +1,9 @@
-import type {HTMLAttributes, ReactNode} from 'react'
-import classNames from 'classnames/bind'
-import {Flex} from '../Flex'
-import {Text} from '../Text'
+import type {HTMLAttributes, ReactNode} from "react"
+import classNames from "classnames/bind"
+import {Flex} from "../Flex"
+import {Text} from "../Text"
 
-import styles from './ListRow.module.scss'
+import styles from "./ListRow.module.scss"
 
 const cx = classNames.bind(styles)
 
@@ -15,10 +15,10 @@ interface ListRowProps extends HTMLAttributes<HTMLLIElement> {
 
 export function ListRow({contents, left, right, ...props}: ListRowProps) {
   return (
-    <li className={cx('article')} {...props}>
+    <li className={cx("article")} {...props}>
       <Flex>
-        {left != null ? <Flex style={{padding: '8px 4px'}}>{left}</Flex> : null}
-        <Flex style={{padding: '8px 4px', flex: 1}} justify="between" align="center">
+        {left != null ? <Flex style={{padding: "8px 4px"}}>{left}</Flex> : null}
+        <Flex style={{padding: "8px 4px", flex: 1}} justify="between" align="center">
           {contents}
           {right != null ? right : null}
         </Flex>

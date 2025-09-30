@@ -1,10 +1,10 @@
-import {Flex} from '../Flex'
-import {Image} from '../Image'
-import {Text} from '../Text'
-import {ListRow} from '.'
+import {Flex} from "../Flex"
+import {Image} from "../Image"
+import {Text} from "../Text"
+import {ListRow} from "."
 
 const meta = {
-  title: 'base/ListRow',
+  title: "base/ListRow",
   component: ListRow,
 }
 

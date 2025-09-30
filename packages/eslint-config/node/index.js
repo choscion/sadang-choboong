@@ -1,7 +1,7 @@
-import globals from 'globals'
+import globals from "globals"
 
-import configs from './configs.js'
-import rules from './rules/index.js'
+import configs from "./configs.js"
+import rules from "./rules/index.js"
 
 export default [
   ...configs,
@@ -14,8 +14,8 @@ export default [
         ...globals.jest,
         ...globals.vitest,
         ...globals.es2023,
-        Atomics: 'readonly',
-        SharedArrayBuffer: 'readonly',
+        Atomics: "readonly",
+        SharedArrayBuffer: "readonly",
       },
     },
     linterOptions: {
