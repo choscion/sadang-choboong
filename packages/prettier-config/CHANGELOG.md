@@ -1,5 +1,11 @@
 # @choboong/prettier-config
 
+## 1.1.2
+
+### Patch Changes
+
+- 1fe7349: 옵션 수정 - singleQuote, tabWidth
+
 ## 1.1.1
 
 ### Patch Changes
