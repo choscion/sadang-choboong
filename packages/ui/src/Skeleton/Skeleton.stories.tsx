@@ -1,12 +1,12 @@
-import {Flex} from '../Flex'
-import {Skeleton} from '.'
-import {ListRow} from '../ListRow'
+import {Flex} from "../Flex"
+import {Skeleton} from "."
+import {ListRow} from "../ListRow"
 
 const meta = {
-  title: 'base/Skeleton',
+  title: "base/Skeleton",
   component: Skeleton,
   parameters: {
-    layout: 'padded',
+    layout: "padded",
   },
 }
 

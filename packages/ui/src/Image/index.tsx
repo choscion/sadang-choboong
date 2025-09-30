@@ -1,14 +1,14 @@
-import classNames from 'classnames/bind'
-import styles from './Image.module.scss'
+import classNames from "classnames/bind"
+import styles from "./Image.module.scss"
 
 const cx = classNames.bind(styles)
 
 export const RATIO_MAP = {
-  '4:1': 'aspect-4-1',
-  '5:3': 'aspect-5-3',
-  '4:3': 'aspect-4-3',
-  '1:1': 'aspect-square',
-  '10:11': 'aspect-10-11',
+  "4:1": "aspect-4-1",
+  "5:3": "aspect-5-3",
+  "4:3": "aspect-4-3",
+  "1:1": "aspect-square",
+  "10:11": "aspect-10-11",
 }
 
 export interface BaseImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
@@ -19,13 +19,13 @@ export interface BaseImageProps extends React.ImgHTMLAttributes<HTMLImageElement
   radius?: number
 }
 
-export function Image({src, size = '1:1', width, height, style, radius, className, ...props}: BaseImageProps) {
+export function Image({src, size = "1:1", width, height, style, radius, className, ...props}: BaseImageProps) {
   return (
     <div
-      className={cx('container', RATIO_MAP[size], className)}
+      className={cx("container", RATIO_MAP[size], className)}
       style={{
-        width: width ?? '100%',
-        height: height ?? 'auto',
+        width: width ?? "100%",
+        height: height ?? "auto",
         borderRadius: radius,
         ...style,
       }}

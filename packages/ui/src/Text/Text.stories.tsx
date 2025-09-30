@@ -1,29 +1,29 @@
-import {colors} from '../Colors'
-import {Text} from '.'
-import type {TextProps} from '.'
+import {colors} from "../Colors"
+import {Text} from "."
+import type {TextProps} from "."
 
 const meta = {
-  title: 'base/Text',
+  title: "base/Text",
   component: Text,
   argTypes: {
     color: {
       control: {
-        type: 'select',
+        type: "select",
         options: Object.keys(colors),
       },
-      description: '텍스트 색상',
+      description: "텍스트 색상",
     },
     size: {
       control: {
-        type: 'select',
-        options: ['t1', 't2', 't3', 't4', 't5'],
+        type: "select",
+        options: ["t1", "t2", "t3", "t4", "t5"],
       },
     },
     bold: {
-      control: {type: 'boolean'},
+      control: {type: "boolean"},
     },
     text: {
-      control: {type: 'text'},
+      control: {type: "text"},
     },
   },
 }
