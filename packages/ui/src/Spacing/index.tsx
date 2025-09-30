@@ -4,9 +4,9 @@ import styles from './Spacing.module.scss'
 const cx = classnames.bind(styles)
 
 export interface SpacingProps {
-    size?: 'sm' | 'md' | 'lg' | 'xl'
+  size?: 'sm' | 'md' | 'lg' | 'xl'
 }
 
 export function Spacing({size = 'md'}: SpacingProps) {
-    return <div className={cx('spacing', `size-${size}`)} />
+  return <div className={cx('spacing', `size-${size}`)} />
 }

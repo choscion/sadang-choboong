@@ -1,8 +1,8 @@
 {
-    "extends": "@choboong/tsconfig/base.json",
-    "compilerOptions": {
-        "baseUrl": "."
-    },
-    "include": ["./src", "./typings/*"],
-    "exclude": ["node_modules", "dist"]
+  "extends": "@choboong/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["./src", "./typings/*"],
+  "exclude": ["node_modules", "dist"]
 }

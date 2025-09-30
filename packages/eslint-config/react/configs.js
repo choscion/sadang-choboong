@@ -11,12 +11,12 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const compat = new FlatCompat({
-    baseDirectory: __dirname,
+  baseDirectory: __dirname,
 })
 
 export default [
-    js.configs.recommended,
-    ...neostandard({noStyle: true}),
-    eslintConfigPrettier,
-    ...compat.extends('plugin:react/recommended', 'plugin:react/jsx-runtime', 'plugin:react-hooks/recommended'),
+  js.configs.recommended,
+  ...neostandard({noStyle: true}),
+  eslintConfigPrettier,
+  ...compat.extends('plugin:react/recommended', 'plugin:react/jsx-runtime', 'plugin:react-hooks/recommended'),
 ]
